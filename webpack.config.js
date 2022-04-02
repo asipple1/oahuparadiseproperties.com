@@ -20,12 +20,13 @@ const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin(
   hash: false,
   filename: template,
   template: path.resolve(environment.paths.source, template),
-  favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
+  // favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
 }));
 
 module.exports = {
   entry: {
     app: path.resolve(environment.paths.source, 'js', 'app.js'),
+    home: path.resolve(environment.paths.source, 'js', 'home.js'),
   },
   output: {
     filename: 'js/[name].js',

@@ -1,26 +1,25 @@
-/* By Athlon Front-End Team */
+
 
 /* Core variables */
 @import 'base/vars';
 
-/* CSS Reset */
-@import 'base/reset';
-
-/* CSS print */
-@import 'base/print';
-
-/* Fonts */
-@import 'base/fonts';
-
 /* Mixins, helpers and functions */
 @import 'base/mixins';
 
-/* Vendor */
 
-/* Components */
 
-/* Browser specific styles */
-@import 'dirty/hacks';
+// Mobile menu
 
-/* Demo Page styles */
-@import 'demo';
+#mobile-menu {
+  button {
+    &.js-menu-toggle {
+      background-color: var(--primary-color);
+    }
+  }
+  
+  .bg-palette-navigationBackground-color {
+    .w-full {
+      background-color: var(--primary-color);
+    }
+  }
+}
