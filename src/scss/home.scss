@@ -5,11 +5,14 @@
 /* Mixins, helpers and functions */
 @import 'base/mixins';
 
+// Header
+header {
+  position: fixed;
+}
+
 // Hero.
-.hero {
-  .h-hero-image {
-    min-height: 100vh;
-  }
+.h-hero-image {
+  min-height: 100vh;
 }
 
 #content {
