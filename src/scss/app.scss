@@ -23,3 +23,20 @@
     }
   }
 }
+
+.o-button {
+  color: var(--primary-white);
+  padding: 12px 35px;
+  border: solid 1px var(--primary-color);
+  background-color: var(--primary-color);
+  margin-top: .5rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.4s;
+  &:hover, &:focus {
+    color: var(--primary-color);
+    background-color: var(--primary-white);
+    border: solid 1px var(--primary-color);
+  }
+}
