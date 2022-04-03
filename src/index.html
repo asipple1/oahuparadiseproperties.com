@@ -1,31 +1,1449 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Webpack Boilerplate Starter Template</title>
-    <meta name="description" content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools.">
-    <meta name="keywords" content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Plamen Nikolov, WeAreAthlon">
+    <meta
+      name="description"
+      content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools."
+    />
+    <meta
+      name="keywords"
+      content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
+    <link rel="stylesheet" href="https://style.realgeeks.media/post/anna.min.css?zvars=eJyrVipIzEktKUnVzUssy0xPLMnMz3NKTM5OL8ovzUvRTc7PyS9SslJQUnYDAyUdBfwa8gsSkzNL%0AKkFaDPQssCv3yczLRjLZAAyQlSYVJaLYbWBiYmhmplQLAF8KOPw%3D">
   </head>
-  <body>
-
-<div class="meet-team">
-  <div class="meet-team__container container">
-    <div class="meet-team__image">
-      <img src="https://images.pexels.com/photos/3209049/pexels-photo-3209049.jpeg?cs=srgb&dl=pexels-jason-boyd-3209049.jpg&fm=jpg" alt="">
-    </div>
-    <div class="meet-team__content">
-      <div class="meet-team__content-text">
-        <h2>Meet the Team</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        <a href="" class="o-button">Find out more</a>
+  <body id="content">
+    <!-- Meet the Team -->
+    <div class="meet-team">
+      <div class="meet-team__container">
+        <div class="meet-team__image">
+          <img
+            src="https://images.pexels.com/photos/3209049/pexels-photo-3209049.jpeg?cs=srgb&dl=pexels-jason-boyd-3209049.jpg&fm=jpg"
+            alt=""
+          />
+        </div>
+        <div class="meet-team__content">
+          <div class="meet-team__content-text">
+            <h2>Meet the Team</h2>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text, and a search for 'lorem ipsum' will
+              uncover many web sites still in their infancy. Various versions
+              have evolved over the years, sometimes by accident, sometimes on
+              purpose (injected humour and the like).
+            </p>
+            <a href="/about" class="o-button">Find out more</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
+    <!-- Buying or selling -->
+    <div class="buying-selling">
+      <a href="/selling" class="buying-selling__card">
+        <img src="https://images.unsplash.com/photo-1598924957326-0446ac30341e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Selling a home">
+        <span class="buying-selling__card-text">
+          <span class="buying-selling__card-text__headline">
+            Selling a Home?
+          </span>
+          <span class="buying-selling__card-text__link">Find how much your home is worth</span>
+        </span>
+      </a>
+      <a href="/buying" class="buying-selling__card">
+        <img src="https://images.unsplash.com/photo-1597799029342-ab2546a93ec6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="Buying a home">
+        <span class="buying-selling__card-text">
+          <span class="buying-selling__card-text__headline">
+            Buying a Home?
+          </span>
+          <span class="buying-selling__card-text__link">Home Search</span>
+        </span>
+      </a>
+    </div>
 
+    <!-- Communities -->
+    <div class="featured-communities">
+      <div class="featured-communities__container">
+        <div class="featured-communities__headline">
+          Featured Communities
+        </div>
+        <div class="featured-communities__grid">
+          <a href="/diamond-head" class="featured-communities__card">
+            <img src="https://images.pexels.com/photos/4321498/pexels-photo-4321498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" loading="lazy">
+            <span class="featured-communities__card__title"><span>Diamond Head</span></span>
+          </a>
+          <a href="/ko-olina" class="featured-communities__card">
+            <img src="https://images.pexels.com/photos/412681/pexels-photo-412681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" loading="lazy">
+            <span class="featured-communities__card__title"><span>Ko Olina</span></span>
+          </a>
+          <a href="/kailua" class="featured-communities__card">
+            <img src="https://images.pexels.com/photos/5123248/pexels-photo-5123248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" loading="lazy">
+            <span class="featured-communities__card__title"><span>Kailua</span></span>
+          </a>
+          <a href="/hoakalei-ka-makana" class="featured-communities__card">
+            <img src="https://images.pexels.com/photos/412681/pexels-photo-412681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" loading="lazy">
+            <span class="featured-communities__card__title"><span>Hoakalei Ka Makana</span></span>
+          </a>
+          <a href="/kaneohe" class="featured-communities__card">
+            <img src="https://images.pexels.com/photos/3867818/pexels-photo-3867818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" loading="lazy">
+            <span class="featured-communities__card__title"><span>Kaneohe</span></span>
+          </a>
+          <a href="/lanikai" class="featured-communities__card">
+            <img src="https://images.pexels.com/photos/4394630/pexels-photo-4394630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" loading="lazy">
+            <span class="featured-communities__card__title"><span>Lanikai</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
 
+    <!-- Listing -->
+    <section id="listings" class="mb-14 -mx-4 sm:-mx-12 md:mx-0">
+      <h2
+        class="text-2xl font-bold text-black border-b border-medium-gray mx-4 sm:mx-12 md:mx-0 pb-3 mb-6"
+      >
+        Featured Properties
+      </h2>
+
+      <div
+        class="mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-4"
+      >
+        <div class="mb-8">
+          <a href="/property/202204186/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/Dgbu0EFaHsb-j-OorxEGQ4PWqQA=/422x336/property-media.realgeeks.com/1/9dfb49cef174e4efbaab09f38ec3465e.jpg"
+                  alt="337 Kihapai Street Unit A, Kailua"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/gm1xvNAbzJSA_9Gi3OhCl0cf4Xc=/422x208/property-media.realgeeks.com/1/9dfb49cef174e4efbaab09f38ec3465e.jpg"
+                  alt="337 Kihapai Street Unit A, Kailua"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$1,299,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">4</span>
+                        Beds
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">2</span>
+                        Baths
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">202204186</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">0</span>
+                        DOM
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >Single story open plan four bedroom two bath home on a
+                      cul-de-sac off the main thoroughfare. Neighborhood feeling
+                      from the moment you step out of your car. Home was
+                      partially renovated commencing in 2017. The kitchen was
+                      completely upgraded: appliances, cabinets and granite
+                      countertops. Showers renovated. Flooring replaced
+                      throughout the home with the exception of the front
+                      bedroom. Windows replaced in most bedrooms. 20 owned PV
+                      panels keep electricity bills under $100 on average. Solar
+                      water heater. Parking for three or four cars. Close to
+                      Kailua Town and all its amenities. Assumable VA mortgage
+                      at 2.25 per cent! VIRTUALLY STAGED photographs
+                      interspersed throughout and identified as such.</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>337 Kihapai Street Unit A, Kailua</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="6248aca984b68cff6ddcbe02"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">
+                      Listing courtesy of Coldwell Banker Realty.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="mb-8">
+          <a href="/property/202206210/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/jkJtNpxNtG3sZ3iu6Bx0WTzFbX4=/422x336/property-media.realgeeks.com/1/bc9d780fe14d7f477503b178290bfb41.jpg"
+                  alt="46-157 Nahiku Place, Kaneohe"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/N_FChwOwyzfuNnG-EyNcvUgAr4o=/422x208/property-media.realgeeks.com/1/bc9d780fe14d7f477503b178290bfb41.jpg"
+                  alt="46-157 Nahiku Place, Kaneohe"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$1,500,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">6</span>
+                        Beds
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">3</span>
+                        Baths
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">202206210</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">1</span>
+                        DOM
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >Located on an elevated lot with panoramic ocean views and
+                      cool breezes. This home is on a quiet cul-de-sac in the
+                      luxurious Ali’i Shores neighborhood with underground
+                      utilities. The main house is 4 bedrooms and 2 full baths
+                      with a courtyard inbetween a separate 2 bedroom and 1 bath
+                      cottage. New asphalt roof with skylights 2021. This home
+                      is ready for your finishing touches. Some Photos have been
+                      enhanced.</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>46-157 Nahiku Place, Kaneohe</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="6247b6f7a29ddfc4acdcbe03"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">
+                      Listing courtesy of Island Life Homes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="mb-8">
+          <a href="/property/202205599/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/9szFSjaJVAfykcZB9tWc3yheAAc=/422x336/property-media.realgeeks.com/1/22dacfb4253522df87c21e1af8b423cb.jpg"
+                  alt="385A Kuliouou Road Unit A, Honolulu"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/TruDlGlKElL4c3XblNM8QMUBtc0=/422x208/property-media.realgeeks.com/1/22dacfb4253522df87c21e1af8b423cb.jpg"
+                  alt="385A Kuliouou Road Unit A, Honolulu"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$1,199,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">7</span>
+                        Beds
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">4</span>
+                        Baths
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">202205599</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">12</span>
+                        DOM
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >First time on the market for this single family home.
+                      This 2 story 7 bedrooms, 4 baths gem can be used as a
+                      multifamily living or a partial rental to supplement your
+                      mortgage. It’s been freshly painted, cleaned and upgraded
+                      in 2022 home yet it still has potential for more upgrades!
+                      Some of the recent upgrades include new plumbing, some
+                      electrical upgrades, new kitchen sink, shower inserts,
+                      vanities. The property is completely fenced in and the
+                      back yard is very private. It also has a large covered
+                      porch and a couple different working/storage areas.
+                      Located in the back of Kuliouou close to hiking trails,
+                      community tennis (and possibly pickleball) courts and
+                      playground. A short drive to Costco, Koko Marina shopping
+                      center, restaurants, beaches, marina, &amp; everything
+                      else Hawaii Kai offers.</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>385A Kuliouou Road Unit A, Honolulu</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="6247b21ad81a3e8275dcbe02"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">Listing courtesy of eXp Realty.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="mb-8">
+          <a href="/property/202206066/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/vln67WgKmm8P7cTytZttWz-EgPU=/422x336/property-media.realgeeks.com/1/a88e5058b637dd81de3dbc83bac257a7.jpg"
+                  alt="51-132 Kaaawa Park Lane Unit 13, Kaaawa"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/NQ4wLGyHQGPz9vCANtZbBgxdNPs=/422x208/property-media.realgeeks.com/1/a88e5058b637dd81de3dbc83bac257a7.jpg"
+                  alt="51-132 Kaaawa Park Lane Unit 13, Kaaawa"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$1,200,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">3</span>
+                        Beds
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">2</span>
+                        Baths
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">202206066</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">1</span>
+                        DOM
+
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+                        Kaaawa Park BLDG.
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >Enjoy this wonderfully maintained home in the peaceful,
+                      private community, "Kaaawa Park Lane". This charming 3
+                      bed, 2 bath single family home nestled between the ocean
+                      and the majestic Koolau Mountains offers the best of
+                      Hawaii at your doorstep: mountains, ocean, hiking,
+                      swimming, kayaking, beautiful surroundings. The upgraded,
+                      remodeled kitchen has all newer appliances, the 2
+                      bathrooms have been tastefully remodeled. Would you like a
+                      low electric bill each month? Comes with 15 owned PV
+                      panels, Enphase Monitoring System stays with the house.
+                      Roof is 1 year old and silicon coated with a 7 yr
+                      warranty. Move in Ready! A short distance to the ocean,
+                      hiking trails, Makaua Falls Trail and Crouching Lion. This
+                      lovely community is across the street from Swanzy Beach
+                      Park and down the road from Kahana Beach Park. This 2
+                      story home with vaulted ceilings has 1 bedroom and full
+                      bath on the ground floor, 2 bed 1 bath upstairs with a
+                      lovely balcony looking up at the majestic Ko'olau
+                      Mountains in your backyard. 2 car garage with extra
+                      parking in the driveway for more cars. No showings until
+                      April 3rd, First Open House, More photos to follow.</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>51-132 Kaaawa Park Lane Unit 13, Kaaawa</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="62478a119af18b936ddcbe02"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">Listing courtesy of Locations LLC.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="mb-8">
+          <a href="/property/202206121/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/PCqu2gxX6-BaHRUuU4M0M0L7R3Y=/422x336/property-media.realgeeks.com/1/a1f7a84dd9fafac7181dc25d8f7991b3.jpg"
+                  alt="3415 Harding Avenue, Honolulu"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/0C8xgEIPa13dmsGNMmOv9rKYyOE=/422x208/property-media.realgeeks.com/1/a1f7a84dd9fafac7181dc25d8f7991b3.jpg"
+                  alt="3415 Harding Avenue, Honolulu"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$2,495,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">12</span>
+                        Beds
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">8</span>
+                        Baths
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">202206121</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">1</span>
+                        DOM
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >Tremendous Duplex Opportunity: High Gross Income
+                      ($12,300+/mo, $147,600+ annual, potential to raise rent),
+                      Extensive ($528,000+) Upgrades, Large Interior Living Area
+                      (5,797 square feet), owned PV System (Two Sun Power 24
+                      panel, 7.2 kW PV systems; 48 panels,14.2 kW total) in a
+                      prime location. Front Structure has one 3 bdrm / 1.5 bath
+                      and one 3 bdrm / 2 bath residence, approx. 1,104 sf each.
+                      Back Structure is two 3 bdrm / 2 bath residences, approx.
+                      1,792 sf each. 9 parking stalls. Total: 12 bedrooms, 7.5
+                      baths, 5,797 sf interior living area on a 7,500 sf lot.
+                      Three of the four residences have been extensively
+                      upgraded, and the fourth residence has been moderately
+                      upgraded. Rear upstairs and downstairs residences have
+                      Mitsubishi split a/c systems, front upstairs has new
+                      window a/c units. Hollow tile first floor, monier tile
+                      roof in back residence. 2 electrical meters. 4 sets of
+                      washer dryers.</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>3415 Harding Avenue, Honolulu</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="624777e03b14fe7156dcbe02"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">Listing courtesy of Locations LLC.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="mb-8">
+          <a href="/property/202206109/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/PCqu2gxX6-BaHRUuU4M0M0L7R3Y=/422x336/property-media.realgeeks.com/1/a1f7a84dd9fafac7181dc25d8f7991b3.jpg"
+                  alt="3415 Harding Avenue, Honolulu"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/0C8xgEIPa13dmsGNMmOv9rKYyOE=/422x208/property-media.realgeeks.com/1/a1f7a84dd9fafac7181dc25d8f7991b3.jpg"
+                  alt="3415 Harding Avenue, Honolulu"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$2,495,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">202206109</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">1</span>
+                        DOM
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >Tremendous Duplex Opportunity: $12,300/mo Gross Income,
+                      Extensive ($528,000+) Upgrades, Large Interior Living Area
+                      (5,797 square feet), owned PV System in a prime location.
+                      Front Structure has one 3 bdrm / 1.5 bath and one 3 bdrm /
+                      2 bath residence, approx. 1,104 sf each. Back Structure is
+                      two 3 bdrm / 2 bath residences, approx. 1,792 sf each. 9
+                      parking stalls. Total: 12 bedrooms, 7.5 baths, 5,797 sf
+                      interior living area on a 7,500 sf lot. Three of four
+                      residences extensively upgraded; fourth residence
+                      moderately upgraded. Rear upstairs and downstairs
+                      residences have Mitsubishi split a/c systems, front
+                      upstairs has new window a/c units. Hollow tile first
+                      floor, monier tile roof back structure. 2 electrical
+                      meters, 4 sets of washer dryers. All photos taken prior to
+                      tenant occupancy.</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>3415 Harding Avenue, Honolulu</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="62476e243a86979468dcbe02"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">Listing courtesy of Locations LLC.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="mb-8">
+          <a href="/property/202205781/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/foBNwODpEHIhfyhmG91YVTCJXRo=/422x336/property-media.realgeeks.com/1/d499c502b672b3b2b3c5df61d2561fc8.jpg"
+                  alt="47-544 Hakuhale Street, Kaneohe"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/bolrVaExNOo0iDbJzIRfQhf8x2w=/422x208/property-media.realgeeks.com/1/d499c502b672b3b2b3c5df61d2561fc8.jpg"
+                  alt="47-544 Hakuhale Street, Kaneohe"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$2,500,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">11</span>
+                        Beds
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">10</span>
+                        Baths
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">202205781</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">11</span>
+                        DOM
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >Amazing opportunity for an investment property or
+                      multifamily home in Ahuimanu, Kaneohe with 70 owned solar
+                      PV panels. Property has 11 bedrooms and 9.5 bathrooms. The
+                      first floor has recently renovated 4BD/1BA with a large
+                      full kitchen and living room, a separate 1BD/1BA with a
+                      wet bar, and another separate 3BD/2BA unit. Second floor
+                      is open to your own custom floor plan 40x60 open space,
+                      and the other tenant occupied units. Plose to a lot of
+                      shopping options like Windward Mall, Kaneohe Bay Shopping
+                      Center and Windward city. Also close access to Likelike
+                      Highway and H-3 Freeway for travel to Pearl Harbor and
+                      Marine Corps Base Hawaii.</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>47-544 Hakuhale Street, Kaneohe</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="624766d2b1316fbec2dcbe02"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">Listing courtesy of Own a Home LLP.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="mb-8">
+          <a href="/property/202206127/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/bsXs6tIKaS0O-N3lzITtdBmDMYI=/422x336/property-media.realgeeks.com/1/550ffd707e7c8b51ae430a0bb7d5b0bb.jpg"
+                  alt="2979 Kalakaua Avenue Unit 803, Honolulu"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/xnu1GONgml30Afc2kv6E5JK71MQ=/422x208/property-media.realgeeks.com/1/550ffd707e7c8b51ae430a0bb7d5b0bb.jpg"
+                  alt="2979 Kalakaua Avenue Unit 803, Honolulu"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$1,690,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">1</span>
+                        Beds
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">1</span>
+                        Baths
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">202206127</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">1</span>
+                        DOM
+
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+                        Coral Strand Ltd BLDG.
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >Welcome home to the sounds of the waves with this luxury
+                      oceanfront condo in the heart of Oahu’s Gold Coast! This
+                      fully furnished XL 1br unit was renovated in 2019 by Steve
+                      Ham which includes custom doors, Gavinwood cabinets, Toto
+                      bidet toilet, Bella Pietra shower tile, custom built
+                      entertainment center, bar, &amp; coffee table, hidden Sub
+                      Zero refrigerator &amp; freezer, Wolff induction cooktop,
+                      convection range, &amp; coffee maker, Google smart home
+                      technology, Polk 8-speaker surround sound system,
+                      60-bottle wine fridge with 2 temperature zones, Bosch
+                      washer/dryer, California closets, luxury vinyl flooring,
+                      chalkboard office wall, plantation shutters, etc. Parking
+                      is in front of the entrance &amp; there’s ample overnight
+                      St parking. Conveniently located near Waikiki &amp;
+                      Diamond Head, Coral Strand includes a heated pool
+                      overlooking the ocean, resident Mgr, secured entry,
+                      modernized elevators, &amp; an extra laundry room.
+                      Maintenance fee includes ALL utilities &amp; even includes
+                      PROPERTY TAXES (same amount for owner occupant or investor
+                      because it’s a Coop) saving you hundreds of dollars
+                      monthly! Don’t miss out on this rare opportunity to
+                      experience what oceanfront living on the Gold Coast is all
+                      about.</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>2979 Kalakaua Avenue Unit 803, Honolulu</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="624758e1c92980b28fdcbe02"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">Listing courtesy of Compass.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="mb-8">
+          <a href="/property/202206089/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/8G2pmjkkDPjwMJbFljrTt9eGviI=/422x336/property-media.realgeeks.com/1/8c3ec653b8afb3cc704a224c31fe9ccd.jpg"
+                  alt="54-059 Waikulama Street, Hauula"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/BJa3zr4WkFKz-cnyezXR3LjRxM0=/422x208/property-media.realgeeks.com/1/8c3ec653b8afb3cc704a224c31fe9ccd.jpg"
+                  alt="54-059 Waikulama Street, Hauula"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$1,400,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">202206089</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">1</span>
+                        DOM
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >Beautiful mountain and ocean views are abound throughout
+                      this pristine Hauula home. This legal duplex could be
+                      great for multi-family living or rental income. Pride of
+                      ownership is evident throughout this well maintained 3
+                      bedroom 2 bath upstairs unit as well as the 2 bed 2.5 bath
+                      downstair tenant occupied unit. Upstairs you will find a
+                      large deck to relax and explore the panoramic ocean and
+                      mountain views, brand new carpet, and paint. Downstairs
+                      you will find 2 bedrooms both with ensuite bathrooms and a
+                      large living room and kitchen area. This legal duplex that
+                      is outside of a flood zone is a must see!</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>54-059 Waikulama Street, Hauula</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="62473dcc04a162808adcbe02"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">
+                      Listing courtesy of BHGRE Advantage Realty.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="mb-8">
+          <a href="/property/202206088/">
+            <article class="w-full flex flex-col text-medium-dark-gray sm:pb-8">
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container hidden md:block"
+              >
+                <img
+                  class="mt-listing-image w-full object-center object-contain"
+                  src="https://t2.realgeeks.media/thumbnail/8G2pmjkkDPjwMJbFljrTt9eGviI=/422x336/property-media.realgeeks.com/1/8c3ec653b8afb3cc704a224c31fe9ccd.jpg"
+                  alt="54-059 Waikulama Street, Hauula"
+                  height="336"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="w-auto relative overflow-y-hidden border background-medium-gray border-medium-gray pt-listing-image-container-small md:hidden"
+              >
+                <img
+                  class="mt-listing-image-small md:mt-0 md:h-52 w-full object-center object-cover"
+                  src="https://t2.realgeeks.media/thumbnail/BJa3zr4WkFKz-cnyezXR3LjRxM0=/422x208/property-media.realgeeks.com/1/8c3ec653b8afb3cc704a224c31fe9ccd.jpg"
+                  alt="54-059 Waikulama Street, Hauula"
+                  height="208"
+                  width="422"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="flex flex-col w-full justify-between">
+                <section class="relative flex flex-col w-full px-4 pt-4">
+                  <div class="flex flex-col mb-4">
+                    <span
+                      class="text-black font-medium font-rubik text-xl flex items-center mb-1"
+                    >
+                      <span class="mr-2">$1,400,000</span>
+                    </span>
+                    <div class="w-full text-sm">
+                      <div class="mb-1 truncate">
+                        <span class="font-bold text-black">5</span>
+                        Beds
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">5</span>
+                        Baths
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">202206088</span>
+                        MLS
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black"
+                          >FS - Fee Simple</span
+                        >
+                        Tenure
+                        <span class="text-lg mx-1.5 leading-none">⋅</span>
+
+                        <span class="font-bold text-black">1</span>
+                        DOM
+                      </div>
+                    </div>
+
+                    <span class="truncate text-xs xl:text-sm py-2"
+                      >Beautiful mountain and ocean views are abound throughout
+                      this pristine Hauula home. This legal duplex could be
+                      great for multi-family living or rental income. Pride of
+                      ownership is evident throughout this well maintained 3
+                      bedroom 2 bath upstairs unit as well as the 2 bed 2.5 bath
+                      downstair tenant occupied unit. Upstairs you will find a
+                      large deck to relax and explore the panoramic ocean and
+                      mountain views, brand new carpet, and paint. Downstairs
+                      you will find 2 bedrooms both with ensuite bathrooms and a
+                      large living room and kitchen area. This legal duplex that
+                      is outside of a flood zone is a must see!</span
+                    >
+                    <div class="flex w-full justify-between items-center">
+                      <div class="text-xs w-40 h-full">
+                        <p>54-059 Waikulama Street, Hauula</p>
+                      </div>
+                      <div class="-mr-2">
+                        <button
+                          class="js-favorite-button text-palette-brand-color p-2"
+                          data-is-favorite="False"
+                          data-property-id="62473c92b84f5a0d72dcbe02"
+                          aria-label="Add favorite"
+                        >
+                          <svg
+                            class="icon-heart-active fill-current hidden w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.754 33.608a7.326 7.326 0 0 0-10 .729L13.7 35.424l-1.055-1.087a7.325 7.325 0 0 0-10-.729 7.692 7.692 0 0 0-.53 11.137l10.366 10.7a1.679 1.679 0 0 0 2.427 0l10.366-10.7a7.687 7.687 0 0 0-.525-11.137z"
+                              transform="translate(.012 -31.967)"
+                            ></path>
+                          </svg>
+
+                          <svg
+                            class="icon-heart-inactive fill-current w-5 h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27.429"
+                            height="24"
+                            viewBox="0 0 27.429 24"
+                          >
+                            <path
+                              d="M24.755 33.647a7.327 7.327 0 0 0-10 .723L13.7 35.463l-1.055-1.088c-2.186-2.261-6.595-3.621-10-.729a7.686 7.686 0 0 0-.53 11.132l10.366 10.7A1.686 1.686 0 0 0 13.7 56a1.665 1.665 0 0 0 1.211-.52l10.366-10.7a7.677 7.677 0 0 0-.522-11.133zm-.7 9.943l-10.329 10.7-10.373-10.7a5.967 5.967 0 0 1 .413-8.636c2.936-2.507 6.386-.691 7.65.616l2.284 2.362 2.29-2.362c1.243-1.286 4.725-3.107 7.65-.616a5.971 5.971 0 0 1 .413 8.636z"
+                              transform="translate(.013 -32.002)"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="w-full flex justify-between border-t border-medium-gray pt-2.5 px-4"
+                >
+                  <div class="text-xs">
+                    <p class="courtesy">
+                      Listing courtesy of BHGRE Advantage Realty.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+
+      <section id="board-disclaimer" class="py-8 text-sm">
+        <div class="w-full px-4 sm:px-9 xl:px-40 pb-4">
+          <p>
+            Based on information from the Multiple Listing Service of Hicentral
+            MLS, Ltd. Listings last updated on
+            <span class="timeserver" data-board-id="1"
+              >2022-04-03 at 3:16 pm</span
+            >. Information is deemed reliable but not guaranteed. Copyright:
+            2022 by HiCentral MLS, Ltd. IDX information is provided exclusively
+            for consumers' personal, non-commercial use. It may not be used for
+            any purpose other than to identify prospective properties consumers
+            may be interested in purchasing.
+          </p>
+        </div>
+      </section>
+    </section>
   </body>
 </html>
