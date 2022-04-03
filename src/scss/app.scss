@@ -25,18 +25,18 @@
 }
 
 .o-button {
-  color: var(--primary-white);
+  color: var(--primary-black);
   padding: 12px 35px;
-  border: solid 1px var(--primary-color);
-  background-color: var(--primary-color);
+  border: solid 1px var(--primary-black);
+  background-color: transparent;
   margin-top: .5rem;
   display: inline-block;
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.4s;
   &:hover, &:focus {
-    color: var(--primary-color);
-    background-color: var(--primary-white);
-    border: solid 1px var(--primary-color);
+    color: var(--primary-white);
+    background-color: var(--primary-black);
+    border: solid 1px var(--primary-black);
   }
 }
