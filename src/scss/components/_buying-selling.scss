@@ -17,6 +17,10 @@
     grid-template-columns: 1fr;
     padding: 4rem;
   }
+  @include respond-to(smartphone) {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
 
   &__card {
     position: relative;
@@ -62,6 +66,7 @@
       z-index: 2;
       &__headline {
         font-size: 2.5rem;
+        font-weight: 100;
       }
       &__link {
         margin-top: 1rem;

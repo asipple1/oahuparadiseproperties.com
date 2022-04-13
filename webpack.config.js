@@ -25,53 +25,59 @@ const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin(
 
 module.exports = {
   entry: {
-    app: path.resolve(environment.paths.source, 'js', 'app.js'),
-    home: path.resolve(environment.paths.source, 'js', 'home.js'),
+    app: path.resolve(environment.paths.source, "js", "app.js"),
+    home: path.resolve(environment.paths.source, "js", "home.js"),
+    about: path.resolve(environment.paths.source, "js", "about.js"),
   },
   output: {
-    filename: 'js/[name].js',
+    filename: "js/[name].js",
     path: environment.paths.output,
   },
   module: {
     rules: [
       {
         test: /\.((c|sa|sc)ss)$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ["babel-loader"],
       },
       {
         test: /\.(png|gif|jpe?g|svg)$/i,
-        type: 'asset',
+        type: "asset",
         parser: {
           dataUrlCondition: {
             maxSize: environment.limits.images,
           },
         },
         generator: {
-          filename: 'images/design/[name].[hash:6][ext]',
+          filename: "images/design/[name].[hash:6][ext]",
         },
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        type: 'asset',
+        type: "asset",
         parser: {
           dataUrlCondition: {
             maxSize: environment.limits.images,
           },
         },
         generator: {
-          filename: 'images/design/[name].[hash:6][ext]',
+          filename: "images/design/[name].[hash:6][ext]",
         },
       },
     ],
   },
   optimization: {
     minimizer: [
-      '...',
+      "...",
       new ImageMinimizerPlugin({
         minimizer: {
           implementation: ImageMinimizerPlugin.imageminMinify,
@@ -79,16 +85,16 @@ module.exports = {
             // Lossless optimization with custom option
             // Feel free to experiment with options for better result for you
             plugins: [
-              ['gifsicle', { interlaced: true }],
-              ['jpegtran', { progressive: true }],
-              ['optipng', { optimizationLevel: 5 }],
+              ["gifsicle", { interlaced: true }],
+              ["jpegtran", { progressive: true }],
+              ["optipng", { optimizationLevel: 5 }],
               // Svgo configuration here https://github.com/svg/svgo#configuration
               [
-                'svgo',
+                "svgo",
                 {
                   plugins: [
                     {
-                      name: 'removeViewBox',
+                      name: "removeViewBox",
                       active: false,
                     },
                   ],
@@ -102,24 +108,24 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
+      filename: "css/[name].css",
     }),
     new CleanWebpackPlugin({
       verbose: true,
-      cleanOnceBeforeBuildPatterns: ['**/*', '!stats.json'],
+      cleanOnceBeforeBuildPatterns: ["**/*", "!stats.json"],
     }),
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(environment.paths.source, 'images', 'content'),
-          to: path.resolve(environment.paths.output, 'images', 'content'),
-          toType: 'dir',
+          from: path.resolve(environment.paths.source, "images", "content"),
+          to: path.resolve(environment.paths.output, "images", "content"),
+          toType: "dir",
           globOptions: {
-            ignore: ['*.DS_Store', 'Thumbs.db'],
+            ignore: ["*.DS_Store", "Thumbs.db"],
           },
         },
       ],
     }),
   ].concat(htmlPluginEntries),
-  target: 'web',
+  target: "web",
 };

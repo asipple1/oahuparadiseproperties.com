@@ -69,3 +69,33 @@ $respond-to-queries: (
     @content;
   }
 }
+
+// Equal Column Flex Grid with Gutters
+@mixin flex-column($repeat, $gutter-horizontal: 0, $gutter-vertical: 0, $base-percent: 99.99%) {
+
+  // Don't add complexity if not subtracting anything
+  $gutter-subtract: ($gutter-horizontal - $gutter-horizontal * 1 / $repeat);
+  @if unitless($gutter-horizontal) and $gutter-horizontal == 0 {
+    $gutter-subtract: 1px * 0;
+  }
+
+  flex: 0 0 calc(#{$base-percent} * 1 / #{$repeat} - #{$gutter-subtract});
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: calc(#{$base-percent} * 1 / #{$repeat} - #{$gutter-subtract});
+
+  &:nth-of-type(n) {
+    margin-top: $gutter-vertical;
+    margin-right: $gutter-horizontal;
+  }
+
+  &:nth-of-type(#{$repeat}n) {
+    margin-right: 0;
+  }
+
+  // No gutter on top grid elements
+  &:nth-of-type(-n+#{$repeat}) {
+    margin-top: 0;
+  }
+}

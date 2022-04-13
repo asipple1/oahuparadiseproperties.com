@@ -6,7 +6,11 @@
 /* Mixins, helpers and functions */
 @import 'base/mixins';
 
-
+// Nav links.
+.text-palette-navigationLink-color {
+  color: var(--primary-color) !important;
+  letter-spacing: 1px !important;
+}
 
 // Mobile menu
 
@@ -43,12 +47,12 @@
   }
 
   .text-hero {
-    font-size: 3.5rem;
     max-width: 950px;
     line-height: 1;
     margin-left: 0;
     margin-right: 0;
     text-shadow: none;
+    font-weight: 100;
   }
 }
 
